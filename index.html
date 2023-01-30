@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Memo test</title>
+  </head>
+  <body class="grid-container">
+    <header
+      class="header border border-secondary border-3 bg-success p-2 text-white bg-opacity-75"
+    >
+      Juguemos un Memo Test!
+    </header>
+    <nav class="navbar"></nav>
+    <aside class="sidebar">
+      <div class="card" style="width: 80%">
+        <img
+          src="/images/keep-trying.jpg"
+          class="card-img-top"
+          alt="Sigue Intentando"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            <li>
+              <ul>
+                Movimientos
+              </ul>
+              <p id="cantidad-de-movimientos">0</p>
+            </li>
+            <li>
+              <ul>
+                Aciertos
+              </ul>
+              <p id="cantidad-de-aciertos">0</p>
+            </li>
+          </p>
+        </div>
+      </div>
+      <div class="contador-moviles ocultar" role="alert">
+        <div class="alert alert-secondary tamaño">
+          Movimientos:
+          <p id="cantidad-de-movimientos-movil">0</p>
+        </div>
+        <div class="alert alert-secondary tamaño">
+          Aciertos:
+          <p id="cantidad-de-aciertos-movil">0</p>
+        </div>
+      </div>
+    </aside>
+    <article
+      id="tablero"
+      class="main tapar-colores bg-success p-2 text-dark bg-opacity-50 border border-secondary"
+    >
+      <div class="inicio-juego cuadro" id="0" onclick="mostrarCuadros(0)"></div>
+      <div class="inicio-juego cuadro" id="1" onclick="mostrarCuadros(1)"></div>
+      <div class="inicio-juego cuadro" id="2" onclick="mostrarCuadros(2)"></div>
+      <div class="inicio-juego cuadro" id="3" onclick="mostrarCuadros(3)"></div>
+      <div class="inicio-juego cuadro" id="4" onclick="mostrarCuadros(4)"></div>
+      <div class="inicio-juego cuadro" id="5" onclick="mostrarCuadros(5)"></div>
+      <div class="inicio-juego cuadro" id="6" onclick="mostrarCuadros(6)"></div>
+      <div class="inicio-juego cuadro" id="7" onclick="mostrarCuadros(7)"></div>
+      <div class="inicio-juego cuadro" id="8" onclick="mostrarCuadros(8)"></div>
+      <div class="inicio-juego cuadro" id="9" onclick="mostrarCuadros(9)"></div>
+      <div class="inicio-juego cuadro" id="10" onclick="mostrarCuadros(10)"></div>
+      <div class="inicio-juego cuadro" id="11" onclick="mostrarCuadros(11)"></div>
+    </article>
+    <footer class="footer">
+      <p>Copyright © Valentin Veron Caceres</p>
+    </footer>
+  </body>
+  <script type="text/javascript" src="/js/main.js"></script>
+</html>
