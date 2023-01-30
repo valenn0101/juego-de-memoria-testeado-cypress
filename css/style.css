@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
+  min-height: 100%;
+}
+
+.grid-container > * {
+  text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template: 
+    'header' 100px
+    'navbar' 50px
+    'sidebar' 120px
+    'main' auto
+    'footer' 50px;
+}
+
+.header{
+    grid-area: header;
+    font-size: 30px;
+    font-weight: 700;
+}
+.navbar{
+    background-color: rgba(245, 245, 220, 0.5);
+    grid-area: navbar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+}
+.sidebar{
+    background-color: rgba(245, 245, 220, 0.5);
+    grid-area: sidebar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar *{
+    opacity: 1;
+    font-weight: 700;
+}
+.card{
+    display: none;
+}
+.rojo{
+    background-color: red;
+}
+.violeta{
+    background-color: violet;
+}
+.naranja{
+    background-color: orange;
+}
+.azul{
+    background-color: blue;
+}
+.blanco{
+    background-color: white;
+}
+.verde{
+    background-color: green;
+}
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 5px;
+}
+.cuadro{
+    transition: opacity ease 0.2s;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.cuadro-marcado{
+    pointer-events: none;
+    opacity: 0.5;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+}
+.inicio-juego{
+    background-color: grey;
+}
+.footer{
+    grid-area: footer;
+    background-color: rgba(245, 245, 220, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.contador-moviles{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+@media (min-width: 768px){
+    .grid-container{
+        grid-template: 
+        'header header' 100px
+        'navbar navbar' 50px
+        'sidebar main' auto
+        'footer footer' 50px / 
+         250px   auto ; 
+    }
+    .sidebar{
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        display:block;
+        margin-top: 10px;
+        height: 80%;
+    }
+
+    .ocultar{
+        display: none;
+    }
+}
+.alert-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}

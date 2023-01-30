@@ -1,0 +1,29 @@
+{
+  "name": "juego-de-memoria-testeado-cypress",
+  "version": "1.0.0",
+  "description": "Realizado con HTML, CSS, Bootstrap y Javascript",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c -1",
+    "cypress-run": "cypress run",
+    "cypress-dev": "cypress open",
+    "test": "run-p start cypress-run",
+    "test-dev": "run-p start cypress-dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valenn0101/juego-de-memoria-testeado-cypress.git"
+  },
+  "author": "Valentin Veron Caceres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valenn0101/juego-de-memoria-testeado-cypress/issues"
+  },
+  "homepage": "https://github.com/valenn0101/juego-de-memoria-testeado-cypress#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha1"
+  },
+  "devDependencies": {
+    "cypress": "^12.4.1"
+  }
+}
